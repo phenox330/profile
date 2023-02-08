@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
+
+*
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+background: lightblue;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.container
+{
+ position: relative;
+ width: 100%;
+ max-width: 1000px;
+ min-height: 1000px;
+ margin: 50px;
+ background: #fff;
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left_Side
+{
+  position: relative;
+  background: #174180;
+  padding: 40px;
+
+}
+
+
+.profilText
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profilText .imgBx
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profilText .imgBx img
+{
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.profilText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profilText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+
+.contactInfo
+{
+    padding-top: 10px;
+}
+
+.contactInfo ul
+{
+  position: relative;
+}
+
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span
+{
+color: #56CCF2;
+font-weight: 400;
+line-height: 13.62px;
+}
+
+.contactInfo.story
+{
+  color: #fff;
+  position: absolute;
+  margin-right: 20px;
+  display: block;
+  top: 38%;  /* move content up by decreasing top value */
+  bottom: 70%;  /* move content up by increasing bottom value */
+
+
+}
+
+.contactInfo.story p
+{
+  font-size: 0.9em;
+    font-weight: 500;
+
+}
+
+
+.contactInfo.skills
+{
+  display: block;
+  position: absolute;
+  top: 52%;  /* move content up by decreasing top value */
+  bottom: 55%;  /* move content up by increasing bottom value */
+  margin-top: 100px;
+  color: #fff;
+  display: flex;  /* change display property to flex */
+  justify-content: space-between;  /* align child elements to the left and right */
+  flex-direction: column;
+
+}
+
+.contactInfo.skills .left {
+  margin-right: 20px;  /* add space between elements */
+  display: block;
+  top: 50px;  /* move element down */
+
+}
+
+.contactInfo.skills .right {
+  margin-left: 25px;  /* add space between elements */
+  position: relative;
+  top: -123px;
+  right: -120px;
+ }
+
+
+
+.contactInfo.skills h3
+{
+  font-size: 1.5em;
+    font-weight: 500;
+    color: #56CCF2;
+}
+
+
+.language {
+position: relative;
+top: 450px;
+color: white;
+display: flex;
+justify-content: space-between;
+}
+
+.language ul {
+  list-style: none;
+  position: relative;
+  top: 50px;
+  left: -108px;
+
+}
+
+.language .left ul{
+  margin-left: 2Opx;  /* add space between elements */
+
+
+}
+
+.language .right ul {
+  margin-left: 50px;  /* add space between elements */
+  font-family: 'Open Sans';
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.language h3
+{
+  color: #56CCF2;
+  font-size: 1.5em;
+    font-weight: 500;
+}
+
+.reference {
+  position: relative;
+  top: 580px;
+
+}
+
+.reference h3 {
+  color: #56CCF2;
+  position: relative;
+  top: -15px;
+}
+
+.reference span {
+  color: white;
+}
+
+a {
+  color: white;
+  position: relative;
+  right: -10px;
+}
+
+a:hover{
+  color: #56CCF2;
+}
+
+
+.container .right_Side
+{
+  position: relative;
+  background: #fff;
+  padding: 40px;
+
+}
+
+.title2
+{
+  color: #174180;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
+h3
+{
+  color: #4F4F4F;
+}
+
+.about
+{
+  margin-bottom: 50px;
+}
+
+.about:last-child
+{
+  margin-bottom: 0;
+}
+
+.about p
+{
+color: #828282;
+
+}
+
+.about .box
+{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.title3
+{
+  position: relative;
+  top: 10px;
+color: #174180;
+}
+
+.title4
+{
+position: relative;
+top: 15px;
+color: #174180;
+}
+
+.year_number {
+  position: relative;
+  right: -400px;
+
+}
+
+.work_title
+{
+position: relative;
+top: 20px;
+}
+
+.work_title h5
+{
+ position: relative;
+ bottom: 15px;
+}
